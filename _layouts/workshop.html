@@ -41,6 +41,12 @@
                 to be announced.
                 {% endif %}
                 </p>
+                {% if page.organizer %}
+                <p>
+                <strong>Organizers:</strong>
+                {{page.organizer | join: ', ' %}}
+                </p>
+                {% endif %}
                 {% if page.helper %}
                 <p>
                 <strong>Helpers:</strong>
